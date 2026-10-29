@@ -23,7 +23,7 @@ export default function Footer() {
           className="flex items-center gap-2.5 font-display text-[19px] font-bold"
         >
           <motion.img
-            src="/images/profile.png"
+            src={`${import.meta.env.BASE_URL}images/profile.png`}
             alt=""
             className="h-[35px] w-[35px] rounded-full object-cover"
             whileHover={{ scale: 1.1, rotate: 5 }}

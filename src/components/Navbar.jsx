@@ -79,7 +79,7 @@ export default function Navbar() {
         >
           <span className="h-[35px] w-[35px] overflow-hidden rounded-full">
             <img
-              src="/images/profile.png"
+              src={`${import.meta.env.BASE_URL}images/profile.png`}
               alt="Mehria Arshad"
               className="h-full w-full object-cover"
             />
