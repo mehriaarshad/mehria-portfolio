@@ -93,7 +93,7 @@ export default function Work() {
               className="group block overflow-hidden bg-[#e9e8e2]"
             >
               <motion.img
-                src={`/images/${project.image}`}
+                src={`${import.meta.env.BASE_URL}images/${project.image}`}
                 alt={project.title}
                 className={`${project.wide ? "max-h-[560px]" : "aspect-[1.2]"} w-full object-cover transition duration-500 group-hover:scale-[1.02]`}
                 whileHover={{ scale: 1.035 }}
