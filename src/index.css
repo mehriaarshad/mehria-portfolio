@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #171716;
+  background: #f5f4ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; }
+* { box-sizing: border-box; }
+::selection { background: #c9f36b; }
+
+.hero-art { isolation: isolate; }
+.hero-art::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 15%;
+  top: 22%;
+  border-radius: 50%;
+  background: #c9f36b;
+}
+@media (max-width: 767px) {
+  .hero-art { max-width: 360px; }
+}
