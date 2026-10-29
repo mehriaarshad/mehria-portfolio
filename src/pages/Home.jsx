@@ -382,7 +382,7 @@ export default function Home() {
               <Link to="/work" className="group block">
                 <div className="overflow-hidden bg-[#e9e8e2]">
                   <motion.img
-                    src={`/images/${image}`}
+                    src={`${import.meta.env.BASE_URL}images/${image}`}
                     alt={title}
                     initial={{ scale: 1.08, opacity: 0.6 }}
                     whileInView={{ scale: 1, opacity: 1 }}
